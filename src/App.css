@@ -41,3 +41,7 @@ address{
 .card-subtitle {
     font-weight: 500;
 }
+
+.form-control.is-valid {
+    background-image: none;
+}
