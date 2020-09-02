@@ -40,7 +40,7 @@ import { Link } from 'react-router-dom';
                 <ul className='list-unstyled'>
                     {cmnts}
                 </ul>
-
+                <CommentForm />
             </div>
         );
       } else {
@@ -94,6 +94,8 @@ import { Link } from 'react-router-dom';
                                         <option>1</option>
                                         <option>2</option>
                                         <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
                                     </Control.select>
                                 </Col>
                         </Row>
@@ -163,7 +165,6 @@ import { Link } from 'react-router-dom';
                     </div>
                     <div className="col-12 col-md-5 m-1">
                         <RenderComments comments={props.comments} />
-                        <CommentForm dishId={props.dish.id} />
                     </div>
                 </div>
             </div>
