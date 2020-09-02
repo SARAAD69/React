@@ -21,7 +21,7 @@ import { Link } from 'react-router-dom';
         }      
       }
 
-    function RenderComments({comments}) {
+    function RenderComments({comments, addComment, dishId}) {
       if (comments != null) {
         const cmnts = comments.map(comment => {
             return (
@@ -40,7 +40,7 @@ import { Link } from 'react-router-dom';
                 <ul className='list-unstyled'>
                     {cmnts}
                 </ul>
-                <CommentForm />
+                <CommentForm dishId={dishId} addComment={addComment}/>
             </div>
         );
       } else {
@@ -71,8 +71,8 @@ import { Link } from 'react-router-dom';
       }
 
       handleSubmit(values){
-        console.log('Current State is: ' + JSON.stringify(values));
-        alert('Current State is: ' + JSON.stringify(values));
+        this.toggleModal();
+        this.props.addComment(this.props.dishId, values.rating, values.author, values.comment);
     }
     
     
@@ -122,9 +122,9 @@ import { Link } from 'react-router-dom';
                                 </Col>
                             </Row>
                             <Row className="form-group">
-                                <Label htmlFor="message" md={12}>Comment</Label>
+                                <Label htmlFor="comment" md={12}>Comment</Label>
                                 <Col md={12}>
-                                    <Control.textarea model=".message" id="message" name="message"
+                                    <Control.textarea model=".comment" id="comment" name="comment"
                                         rows="6"
                                         className="form-control">
                                     </Control.textarea>
@@ -150,7 +150,6 @@ import { Link } from 'react-router-dom';
             <div className="container">
                 <div className="row">
                     <Breadcrumb>
-
                         <BreadcrumbItem><Link to="/menu">Menu</Link></BreadcrumbItem>
                         <BreadcrumbItem active>{props.dish.name}</BreadcrumbItem>
                     </Breadcrumb>
@@ -164,7 +163,9 @@ import { Link } from 'react-router-dom';
                         <RenderDish dish={props.dish} />
                     </div>
                     <div className="col-12 col-md-5 m-1">
-                        <RenderComments comments={props.comments} />
+                        <RenderComments comments={props.comments}
+                        addComment={props.addComment}
+                        dishId={props.dish.id} />
                     </div>
                 </div>
             </div>
