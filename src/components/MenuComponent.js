@@ -46,23 +46,23 @@ import { Loading } from './LoadingComponent';
             );
         }
         else
-        return ( 
-            <div className="container">
-                <div className="row">
-                    <Breadcrumb>
-                        <BreadcrumbItem> <Link to='home'>Home</Link> </BreadcrumbItem>
-                        <BreadcrumbItem active>Menu</BreadcrumbItem>
-                    </Breadcrumb>
-                    <div className="col-12">
-                        <h3>Menu</h3>
-                        <hr />
+            return ( 
+                <div className="container">
+                    <div className="row">
+                        <Breadcrumb>
+                            <BreadcrumbItem> <Link to='home'>Home</Link> </BreadcrumbItem>
+                            <BreadcrumbItem active>Menu</BreadcrumbItem>
+                        </Breadcrumb>
+                        <div className="col-12">
+                            <h3>Menu</h3>
+                            <hr />
+                        </div>    
                     </div>    
-                </div>    
-                <div className="row">
-                    {menu}
+                    <div className="row">
+                        {menu}
+                    </div>
                 </div>
-            </div>
-        );
+            );
     }
 
 export default Menu;
