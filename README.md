@@ -1,3 +1,28 @@
+# Front-End-Web-UI-Frameworks-and-Tools
+This project is a result of finishing "Front-End Web Development with React" course. Simple website created with usage of React, Reactstrap and Redux.
+
+## Description
+The project is an example website for restaurant which demonstrates Javascript based front-end application development, and in particular the React library. It contains as well examples of use of Reactstrap for Bootstrap 4-based responsive UI design. It shoes various aspects of React component, React router and its use in developing single-page applications and, finally, useage of Fetch for client-server communication. It also contains example usage of controlled forms, introduction to the Redux and its usege to develop React-Redux powered applications. Lastly, this project contains example of simple usages of React animation support.
+To summarise this project shows my:
+
+- Familiarity with client-side Javascript application development and the React library
+- Ability to implement single page applications in React
+- Ability to use various React features including components and forms
+- Ability to implement a functional front-end web application using React
+- Ability to use Reactstrap for designing responsive React applications
+- Ability to use Redux to design the architecture for a React-Redux application
+
+## Course assignments
+The website contains following assignments completed and marked as 100% :
+- #### Assignment 1: React Components
+
+- #### Assignment 2: React Router and Single Page Applications
+
+- #### Assignment 3: React Forms and Redux
+
+- #### Assignment 4: Redux, Client-Server Communication and Fetch
+
+______________________________________________________________________________________
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
