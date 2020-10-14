@@ -1,4 +1,4 @@
-# Front-End-Web-UI-Frameworks-and-Tools
+# Front End Development with React
 This project is a result of finishing "Front-End Web Development with React" course. Simple website created with usage of React, Reactstrap and Redux.
 
 ## Description
